@@ -1,38 +1,227 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bg-container {
+  background-color: #212120;
+ min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+  
+  
 }
 
-.App-link {
-  color: #61dafb;
+.extra-large-devices {
+  display: none;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width:992px) {
+  .extra-large-devices{
+    display: flex;
+    justify-content: space-between;
   }
-  to {
-    transform: rotate(360deg);
+  .extra-large-section-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    width: 25%;
+  }
+}
+
+.main-container {
+  width: 90%;
+  
+}
+
+
+.large-news-container {
+  display: none;
+}
+
+
+
+@media  screen and ((min-width:576px ) and (max-width:991px)) {
+  .bg-container{
+    width: 100%;
+    
+  }
+  .main-container{
+    width: 100%;
+    padding: 10px;
+  }
+  .large-news-container {
+    display: block;
+    
+  }
+  .latest-news-bg-container {
+    display: none;
+  }
+  .section-container{
+    width: 100%;
+    padding-left: 10px;
+  }
+  .text-container{
+    
+  }
+}
+
+@media screen and (min-width:769px){
+  .bg-container{
+    width: 100%;
+  }
+  
+}
+
+.section-container {
+  width: 100%;
+  
+  
+  
+}
+
+@media  screen and ((min-width:576px) and  (max-width:991px)) {
+  .main-container{
+    display: flex;
+    width: 100%;
+  }
+  
+}
+
+.about-heading {
+  color: #ffffff;
+  
+  font-weight: 500;
+}
+
+
+.about-para {
+  color: #d1d0cd;
+  font-size: 16px;
+}
+
+.social-buttons-container {
+  
+  
+
+}
+
+
+.facebook-button {
+  border: 1px solid #94938f;
+  background-color: transparent;
+  color: #87857f;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 8px;
+  
+}
+
+.horizontal-line {
+  color: #94938f;
+}
+
+
+.blog-image {
+  
+  width: 80px;
+  
+  margin-right: 15px;
+}
+
+
+.latest-news-container {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 50vh;
+
+
+}
+.large-latest-container {
+  
+  width: 80%;
+  
+}
+@media screen and ((min-width:576px) and (max-width:991px)) {
+  .latest-news-container{
+    
+    
+  }
+
+  
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+  
+  height: 80px;
+  
+
+  
+  
+}
+
+.each-card-container {
+  display: flex;
+  align-items: center;
+  
+  height: 100px;
+  border-bottom: 1px solid #94938f;
+  
+  
+}
+
+.each-card-heading {
+  color: #94938f;
+  font-weight: 550;
+  
+  font-size: 14px;
+}
+
+.data-para {
+  color: #09e818;
+  font-size: 14px;
+}
+
+.each-card-last-para{
+  color: #94938f;
+}
+
+.phone-para {
+  color: #94938f;
+  font-size: 22px;
+}
+
+
+
+
+.phone-numbers{
+  color: #94938f;
+
+}
+
+@media  screen and (max-width:576px) {
+  .large-right-container{
+    display: block;
+  }
+  
+  
+}
+
+.important-container{
+  display: block;
+}
+
+
+@media  screen and (min-width:992px) {
+  .main-container{
+    display: none;
   }
 }
